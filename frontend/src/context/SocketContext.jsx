@@ -22,7 +22,7 @@ export const SocketContextProvider = ({ children }) => {
       return;
     }
 
-    const newSocket = io("https://chat-app-8mli.onrender.com/", {
+    const newSocket = io("https://chat-app-8mli.onrender.com", {
       query: {
         userId: authUser._id,
       },
